@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NbU-0A-Wgd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Smiles View Controller-->
+        <scene sceneID="AaD-dN-OLf">
+            <objects>
+                <viewController id="NbU-0A-Wgd" customClass="SmilesViewController" customModule="EmojiKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rx4-hi-l2o"/>
+                        <viewControllerLayoutGuide type="bottom" id="iXa-YE-KiZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Om-Vb-Alg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQh-xI-0Jw">
+                                <rect key="frame" x="158" y="218" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EQh-xI-0Jw" firstAttribute="top" secondItem="Rx4-hi-l2o" secondAttribute="bottom" constant="198" id="PKw-Xk-gPc"/>
+                            <constraint firstItem="EQh-xI-0Jw" firstAttribute="leading" secondItem="2Om-Vb-Alg" secondAttribute="leading" constant="158" id="Vll-Nf-ZWX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="smilesLabel" destination="EQh-xI-0Jw" id="WWu-mr-fJn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wM-OY-MAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="160"/>
+        </scene>
+    </scenes>
+</document>
